@@ -1,0 +1,5 @@
+D:\Dropbox\Programming\OpenGL\Homework1\SumNumbersInString\bin\Debug\SumNumbersInString.exe.config
+D:\Dropbox\Programming\OpenGL\Homework1\SumNumbersInString\bin\Debug\SumNumbersInString.exe
+D:\Dropbox\Programming\OpenGL\Homework1\SumNumbersInString\bin\Debug\SumNumbersInString.pdb
+D:\Dropbox\Programming\OpenGL\Homework1\SumNumbersInString\obj\Debug\SumNumbersInString.exe
+D:\Dropbox\Programming\OpenGL\Homework1\SumNumbersInString\obj\Debug\SumNumbersInString.pdb

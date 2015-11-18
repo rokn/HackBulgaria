@@ -1,0 +1,5 @@
+D:\Dropbox\Programming\OpenGL\Homework1\IntegerPalindromes\bin\Debug\IntegerPalindromes.exe.config
+D:\Dropbox\Programming\OpenGL\Homework1\IntegerPalindromes\bin\Debug\IntegerPalindromes.exe
+D:\Dropbox\Programming\OpenGL\Homework1\IntegerPalindromes\bin\Debug\IntegerPalindromes.pdb
+D:\Dropbox\Programming\OpenGL\Homework1\IntegerPalindromes\obj\Debug\IntegerPalindromes.exe
+D:\Dropbox\Programming\OpenGL\Homework1\IntegerPalindromes\obj\Debug\IntegerPalindromes.pdb

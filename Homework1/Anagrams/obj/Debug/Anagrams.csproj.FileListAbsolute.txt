@@ -1,0 +1,5 @@
+D:\Dropbox\Programming\OpenGL\Homework1\Anagrams\bin\Debug\Anagrams.exe.config
+D:\Dropbox\Programming\OpenGL\Homework1\Anagrams\bin\Debug\Anagrams.exe
+D:\Dropbox\Programming\OpenGL\Homework1\Anagrams\bin\Debug\Anagrams.pdb
+D:\Dropbox\Programming\OpenGL\Homework1\Anagrams\obj\Debug\Anagrams.exe
+D:\Dropbox\Programming\OpenGL\Homework1\Anagrams\obj\Debug\Anagrams.pdb

@@ -1,0 +1,5 @@
+D:\Dropbox\Programming\OpenGL\Homework1\PalindromeScore\bin\Debug\PalindromeScore.exe.config
+D:\Dropbox\Programming\OpenGL\Homework1\PalindromeScore\bin\Debug\PalindromeScore.exe
+D:\Dropbox\Programming\OpenGL\Homework1\PalindromeScore\bin\Debug\PalindromeScore.pdb
+D:\Dropbox\Programming\OpenGL\Homework1\PalindromeScore\obj\Debug\PalindromeScore.exe
+D:\Dropbox\Programming\OpenGL\Homework1\PalindromeScore\obj\Debug\PalindromeScore.pdb

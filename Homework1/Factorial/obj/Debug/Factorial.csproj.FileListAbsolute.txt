@@ -1,0 +1,9 @@
+D:\Dropbox\Programming\OpenGL\Homework1\Factorial\bin\Debug\Factorial.exe.config
+D:\Dropbox\Programming\OpenGL\Homework1\Factorial\bin\Debug\Factorial.exe
+D:\Dropbox\Programming\OpenGL\Homework1\Factorial\bin\Debug\Factorial.pdb
+D:\Dropbox\Programming\OpenGL\Homework1\Factorial\obj\Debug\Factorial.csprojResolveAssemblyReference.cache
+D:\Dropbox\Programming\OpenGL\Homework1\Factorial\obj\Debug\Factorial.exe
+D:\Dropbox\Programming\OpenGL\Homework1\Factorial\obj\Debug\Factorial.pdb
+D:\Dropbox\Programming\HackBulgaria\HackBulgaria\Homework1\Factorial\bin\Debug\Factorial.exe.config
+D:\Dropbox\Programming\HackBulgaria\HackBulgaria\Homework1\Factorial\obj\Debug\Factorial.exe
+D:\Dropbox\Programming\HackBulgaria\HackBulgaria\Homework1\Factorial\obj\Debug\Factorial.pdb

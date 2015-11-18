@@ -1,0 +1,5 @@
+D:\Dropbox\Programming\OpenGL\Homework1\VowelsInAString\bin\Debug\VowelsInAString.exe.config
+D:\Dropbox\Programming\OpenGL\Homework1\VowelsInAString\bin\Debug\VowelsInAString.exe
+D:\Dropbox\Programming\OpenGL\Homework1\VowelsInAString\bin\Debug\VowelsInAString.pdb
+D:\Dropbox\Programming\OpenGL\Homework1\VowelsInAString\obj\Debug\VowelsInAString.exe
+D:\Dropbox\Programming\OpenGL\Homework1\VowelsInAString\obj\Debug\VowelsInAString.pdb

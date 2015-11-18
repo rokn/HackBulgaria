@@ -1,0 +1,6 @@
+D:\Dropbox\Programming\OpenGL\Homework1\LucasSeries\bin\Debug\LucasSeries.exe.config
+D:\Dropbox\Programming\OpenGL\Homework1\LucasSeries\bin\Debug\LucasSeries.exe
+D:\Dropbox\Programming\OpenGL\Homework1\LucasSeries\bin\Debug\LucasSeries.pdb
+D:\Dropbox\Programming\OpenGL\Homework1\LucasSeries\obj\Debug\LucasSeries.exe
+D:\Dropbox\Programming\OpenGL\Homework1\LucasSeries\obj\Debug\LucasSeries.pdb
+D:\Dropbox\Programming\OpenGL\Homework1\LucasSeries\obj\Debug\LucasSeries.csprojResolveAssemblyReference.cache
