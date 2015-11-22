@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrayscaleImages", "GrascaleImages\GrayscaleImages.csproj", "{C5571B31-0BC5-4E23-B3E1-4D70FC57BCDA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathTasks", "MathTasks\MathTasks.csproj", "{FE532C68-A97B-4E88-8461-D2F36DE12B6F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C5571B31-0BC5-4E23-B3E1-4D70FC57BCDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5571B31-0BC5-4E23-B3E1-4D70FC57BCDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5571B31-0BC5-4E23-B3E1-4D70FC57BCDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5571B31-0BC5-4E23-B3E1-4D70FC57BCDA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE532C68-A97B-4E88-8461-D2F36DE12B6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE532C68-A97B-4E88-8461-D2F36DE12B6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE532C68-A97B-4E88-8461-D2F36DE12B6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE532C68-A97B-4E88-8461-D2F36DE12B6F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
