@@ -20,11 +20,12 @@ namespace MathTasks
 
 
             //List<int> birtdays = new List<int>() { 5, 10, 6, 7, 3, 4, 5, 11, 21, 300, 15 };
-            //List<KeyValuePair<int, int>> ranges = new List<KeyValuePair<int, int>>();
+            List<KeyValuePair<int, int>> ranges = new List<KeyValuePair<int, int>>();
             //ranges.Add(new KeyValuePair<int, int>(4, 9));
             //ranges.Add(new KeyValuePair<int, int>(6, 7));
             //ranges.Add(new KeyValuePair<int, int>(200, 225));
             //ranges.Add(new KeyValuePair<int, int>(300, 365));
+            KeyValuePair<int,int> kvp = new KeyValuePair<int, int>()
 
             //List<int> result = BirthdayRanges(birtdays, ranges);
 
