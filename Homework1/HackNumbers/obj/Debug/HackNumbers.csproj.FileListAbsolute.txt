@@ -1,5 +1,0 @@
-D:\Dropbox\Programming\OpenGL\Homework1\HackNumbers\bin\Debug\HackNumbers.exe.config
-D:\Dropbox\Programming\OpenGL\Homework1\HackNumbers\bin\Debug\HackNumbers.exe
-D:\Dropbox\Programming\OpenGL\Homework1\HackNumbers\bin\Debug\HackNumbers.pdb
-D:\Dropbox\Programming\OpenGL\Homework1\HackNumbers\obj\Debug\HackNumbers.exe
-D:\Dropbox\Programming\OpenGL\Homework1\HackNumbers\obj\Debug\HackNumbers.pdb

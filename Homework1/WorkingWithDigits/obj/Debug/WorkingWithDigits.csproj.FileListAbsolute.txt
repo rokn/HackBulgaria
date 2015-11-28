@@ -1,5 +1,0 @@
-D:\Dropbox\Programming\OpenGL\Homework1\WorkingWithDigits\bin\Debug\WorkingWithDigits.exe.config
-D:\Dropbox\Programming\OpenGL\Homework1\WorkingWithDigits\bin\Debug\WorkingWithDigits.exe
-D:\Dropbox\Programming\OpenGL\Homework1\WorkingWithDigits\bin\Debug\WorkingWithDigits.pdb
-D:\Dropbox\Programming\OpenGL\Homework1\WorkingWithDigits\obj\Debug\WorkingWithDigits.exe
-D:\Dropbox\Programming\OpenGL\Homework1\WorkingWithDigits\obj\Debug\WorkingWithDigits.pdb
