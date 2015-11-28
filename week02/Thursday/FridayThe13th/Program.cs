@@ -25,9 +25,12 @@ namespace DateTasks
 
             //FindIntersectingAppointments(startDates, durations);
 
-            //PrintCalendar(11, 2015, new CultureInfo("bg-BG"));
+            for (int i = 0; i < 12; i++)
+            {
+                PrintCalendar(i+1, 2015, new CultureInfo("bg-BG"));
+            }
 
-            Console.WriteLine(GetBalance("pesho.txt", new DateTime(2015, 3, 26), new DateTime(2015, 3, 31), new CultureInfo("bg-BG")));
+            //Console.WriteLine(GetBalance("pesho.txt", new DateTime(2015, 3, 26), new DateTime(2015, 3, 31), new CultureInfo("bg-BG")));
         }
 
 
@@ -164,7 +167,7 @@ namespace DateTasks
         {
             Console.OutputEncoding = Encoding.UTF8;
             DateTime date = new DateTime(year, month, 1);
-            Console.WriteLine(culture.DateTimeFormat.MonthNames[month - 1]);
+            Console.WriteLine(culture.DateTimeFormat.MonthNames[month - 1].ToUpper());
 
             for (int i = 0; i < 7; i++)
             {
@@ -186,13 +189,15 @@ namespace DateTasks
             }
 
             Console.WriteLine();
+            Console.WriteLine();
         }
 
         private static void PrintStartOffset(DateTime date, CultureInfo culture)
         {
             for (int i = 0; i < (int)date.DayOfWeek; i++)
             {
-                Console.Write("{0" + (GetDayOfWeekLength((DayOfWeek)i, culture) + 1) + "}", ' ');
+                int length = GetDayOfWeekLength((DayOfWeek)i, culture) + 1;
+                Console.Write("{0," + length + "}", ' ');
             }
         }
 
