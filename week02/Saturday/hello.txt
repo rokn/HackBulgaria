@@ -1,5 +1,4 @@
 This is line one.
-This is line two.
-I am number three.
 Uh, I forgot how to count!
+I am number three.
 This is line five.
