@@ -5,22 +5,22 @@ namespace MainProject
 {
     public class Vector
     {
-        private double[] coordinates;
+        private readonly double[] _coordinates;
         
         public Vector(params double[] coordinates)
         {
             if (coordinates.Length <= 0)
                 throw new ArgumentOutOfRangeException("There must be at least one dimension");
-            this.coordinates = coordinates;
+            this._coordinates = coordinates;
         }
 
         public Vector(Vector vector)
         {
-            coordinates = new double[vector.Dimensions];
+            _coordinates = new double[vector.Dimensions];
             int i = 0;
-            foreach(double coord in vector.coordinates)
+            foreach(double coord in vector._coordinates)
             {
-                coordinates[i++] = coord;
+                _coordinates[i++] = coord;
             }
         }
 
@@ -28,11 +28,11 @@ namespace MainProject
         {
             get
             {
-                return coordinates[i];
+                return _coordinates[i];
             }
             set
             {
-                coordinates[i] = value;
+                _coordinates[i] = value;
             }
         }
 
@@ -40,7 +40,7 @@ namespace MainProject
         {
             get
             {
-                return coordinates.Length;
+                return _coordinates.Length;
             }
         }
 
@@ -52,7 +52,7 @@ namespace MainProject
 
                 for (int i = 0; i < Dimensions; i++)
                 {
-                    length += Math.Pow(coordinates[i], 2);
+                    length += Math.Pow(_coordinates[i], 2);
                 }
 
                 return Math.Sqrt(length);
@@ -65,7 +65,7 @@ namespace MainProject
             builder.Append("(");
             for (int i = 0; i < Dimensions; i++)
             {
-                builder.Append(String.Format("{0}, ", coordinates[i]));
+                builder.Append(String.Format("{0}, ", _coordinates[i]));
             }
             builder.Remove(builder.Length - 2, 2);
             builder.Append(")");
@@ -80,7 +80,7 @@ namespace MainProject
 
             for (int i = 0; i < Dimensions; i++)
             {
-                if(coordinates[i] != other.coordinates[i])
+                if(_coordinates[i] != other._coordinates[i])
                 {
                     return false;
                 }
@@ -197,7 +197,7 @@ namespace MainProject
             unchecked
             {
                 int hash = 17;
-                hash = hash * 23 + coordinates.GetHashCode();
+                hash = hash * 23 + _coordinates.GetHashCode();
                 return hash;
             }
         }
