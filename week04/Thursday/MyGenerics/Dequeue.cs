@@ -23,7 +23,7 @@
 
         public void Clear()
         {
-            front = back = capacity / 2
+            front = back = capacity / 2;
         }
     }
 }

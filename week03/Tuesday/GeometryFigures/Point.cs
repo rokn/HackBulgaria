@@ -11,7 +11,6 @@ namespace GeometryFigures
         {
             this.x = CoordinateSystemOrigin.x;
             this.y = CoordinateSystemOrigin.y;
-            DateTime date = DateTime.Now;
         }
 
         public Point(double x, double y)
