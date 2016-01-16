@@ -1,20 +1,51 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.23107.0
+VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RPGEngine", "RPGEngine\RPGEngine.csproj", "{F4A3F925-D49E-44F1-9D14-274118B1FD81}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XNARpg", "XNARpg\XNARpg\XNARpg.csproj", "{6CD51AFE-C10B-44A9-BCBF-8DDA3884A21E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XNARpgContent", "XNARpg\XNARpgContent\XNARpgContent.contentproj", "{8E697D82-0F25-4ECB-95A9-9387B8D5EB3E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xna.Common", "Xna.Common\Xna.Common.csproj", "{85DCD1CC-1F04-4E96-8E8F-9D000DD49E54}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
 		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{F4A3F925-D49E-44F1-9D14-274118B1FD81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F4A3F925-D49E-44F1-9D14-274118B1FD81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4A3F925-D49E-44F1-9D14-274118B1FD81}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F4A3F925-D49E-44F1-9D14-274118B1FD81}.Debug|x86.Build.0 = Debug|Any CPU
 		{F4A3F925-D49E-44F1-9D14-274118B1FD81}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F4A3F925-D49E-44F1-9D14-274118B1FD81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4A3F925-D49E-44F1-9D14-274118B1FD81}.Release|x86.ActiveCfg = Release|Any CPU
+		{F4A3F925-D49E-44F1-9D14-274118B1FD81}.Release|x86.Build.0 = Release|Any CPU
+		{6CD51AFE-C10B-44A9-BCBF-8DDA3884A21E}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{6CD51AFE-C10B-44A9-BCBF-8DDA3884A21E}.Debug|Any CPU.Build.0 = Debug|x86
+		{6CD51AFE-C10B-44A9-BCBF-8DDA3884A21E}.Debug|x86.ActiveCfg = Debug|x86
+		{6CD51AFE-C10B-44A9-BCBF-8DDA3884A21E}.Debug|x86.Build.0 = Debug|x86
+		{6CD51AFE-C10B-44A9-BCBF-8DDA3884A21E}.Release|Any CPU.ActiveCfg = Release|x86
+		{6CD51AFE-C10B-44A9-BCBF-8DDA3884A21E}.Release|x86.ActiveCfg = Release|x86
+		{6CD51AFE-C10B-44A9-BCBF-8DDA3884A21E}.Release|x86.Build.0 = Release|x86
+		{8E697D82-0F25-4ECB-95A9-9387B8D5EB3E}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{8E697D82-0F25-4ECB-95A9-9387B8D5EB3E}.Debug|x86.ActiveCfg = Debug|x86
+		{8E697D82-0F25-4ECB-95A9-9387B8D5EB3E}.Release|Any CPU.ActiveCfg = Release|x86
+		{8E697D82-0F25-4ECB-95A9-9387B8D5EB3E}.Release|x86.ActiveCfg = Release|x86
+		{85DCD1CC-1F04-4E96-8E8F-9D000DD49E54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85DCD1CC-1F04-4E96-8E8F-9D000DD49E54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85DCD1CC-1F04-4E96-8E8F-9D000DD49E54}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{85DCD1CC-1F04-4E96-8E8F-9D000DD49E54}.Debug|x86.Build.0 = Debug|Any CPU
+		{85DCD1CC-1F04-4E96-8E8F-9D000DD49E54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85DCD1CC-1F04-4E96-8E8F-9D000DD49E54}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85DCD1CC-1F04-4E96-8E8F-9D000DD49E54}.Release|x86.ActiveCfg = Release|Any CPU
+		{85DCD1CC-1F04-4E96-8E8F-9D000DD49E54}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

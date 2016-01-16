@@ -3,12 +3,12 @@
 	public interface IDamageDealObject
 	{
 		/// <summary>
-		/// Damage of the object
+		///     Damage of the object
 		/// </summary>
 		float Damage { get; }
 
 		/// <summary>
-		/// Name of the object
+		///     Name of the object
 		/// </summary>
 		string Name { get; }
 	}

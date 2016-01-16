@@ -3,12 +3,12 @@
 	public interface IWeapon : IDamageDealObject
 	{
 		/// <summary>
-		/// Durability of the weapon
+		///     Durability of the weapon
 		/// </summary>
-		float Durability { get; }
+		int Durability { get; }
 
 		/// <summary>
-		/// Uses the weapon
+		///     Uses the weapon
 		/// </summary>
 		/// <param name="damage">Damage from weapon</param>
 		/// <returns>Returns true if the weapon can be used</returns>
