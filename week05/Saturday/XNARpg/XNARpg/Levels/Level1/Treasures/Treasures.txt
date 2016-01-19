@@ -1,0 +1,4 @@
+﻿w,The Kingslayer,10.0,12
+s,Pyroblast,25,45,3
+p,health
+p,health
