@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="HackLibrary" Class="HackLibraryDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=(local);Initial Catalog=HackLibrary;Integrated Security=True" SettingsObjectName="LibraryManagement.Properties.Settings" SettingsPropertyName="HackLibraryConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Author" Member="Authors">
+    <Type Name="Author">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="FirstName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="LastName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="YearBorn" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="YearDied" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Association Name="Author_AuthorBook" Member="AuthorBooks" ThisKey="Id" OtherKey="AuthorId" Type="AuthorBook" />
+    </Type>
+  </Table>
+  <Table Name="dbo.AuthorBook" Member="AuthorBooks">
+    <Type Name="AuthorBook">
+      <Column Name="BookISBN" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="AuthorId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="Author_AuthorBook" Member="Author" ThisKey="AuthorId" OtherKey="Id" Type="Author" IsForeignKey="true" />
+      <Association Name="Book_AuthorBook" Member="Book" ThisKey="BookISBN" OtherKey="ISBN" Type="Book" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Book" Member="Books">
+    <Type Name="Book">
+      <Column Name="ISBN" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Title" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="DatePublished" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Publisher" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Pages" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Book_AuthorBook" Member="AuthorBooks" ThisKey="ISBN" OtherKey="BookISBN" Type="AuthorBook" />
+      <Association Name="Book_BookGenre" Member="BookGenres" ThisKey="ISBN" OtherKey="BookISBN" Type="BookGenre" />
+      <Association Name="Book_HardCopy" Member="HardCopies" ThisKey="ISBN" OtherKey="BookISBN" Type="HardCopy" />
+    </Type>
+  </Table>
+  <Table Name="dbo.BookGenre" Member="BookGenres">
+    <Type Name="BookGenre">
+      <Column Name="BookISBN" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="GenreId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="Book_BookGenre" Member="Book" ThisKey="BookISBN" OtherKey="ISBN" Type="Book" IsForeignKey="true" />
+      <Association Name="Genre_BookGenre" Member="Genre" ThisKey="GenreId" OtherKey="Id" Type="Genre" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.BookLeaningHistory" Member="BookLeaningHistories">
+    <Type Name="BookLeaningHistory">
+      <Column Name="HardCopyId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="UserLeantTo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="LeantDate" Type="System.DateTime" DbType="Date NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ReturnedDate" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Association Name="HardCopy_BookLeaningHistory" Member="HardCopy" ThisKey="HardCopyId" OtherKey="Id" Type="HardCopy" IsForeignKey="true" />
+      <Association Name="User_BookLeaningHistory" Member="User" ThisKey="UserLeantTo" OtherKey="Id" Type="User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Genre" Member="Genres">
+    <Type Name="Genre">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="Genre_BookGenre" Member="BookGenres" ThisKey="Id" OtherKey="GenreId" Type="BookGenre" />
+    </Type>
+  </Table>
+  <Table Name="dbo.HardCopy" Member="HardCopies">
+    <Type Name="HardCopy">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="BookISBN" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="UserLeantTo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LeantDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="ExpectedReturnDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Association Name="HardCopy_BookLeaningHistory" Member="BookLeaningHistories" ThisKey="Id" OtherKey="HardCopyId" Type="BookLeaningHistory" />
+      <Association Name="Book_HardCopy" Member="Book" ThisKey="BookISBN" OtherKey="ISBN" Type="Book" IsForeignKey="true" />
+      <Association Name="User_HardCopy" Member="User" ThisKey="UserLeantTo" OtherKey="Id" Type="User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[User]" Member="Users">
+    <Type Name="User">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="FirstName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="LastName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Pseudonim" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Phone" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="User_BookLeaningHistory" Member="BookLeaningHistories" ThisKey="Id" OtherKey="UserLeantTo" Type="BookLeaningHistory" />
+      <Association Name="User_HardCopy" Member="HardCopies" ThisKey="Id" OtherKey="UserLeantTo" Type="HardCopy" />
+    </Type>
+  </Table>
+</Database>
