@@ -1,0 +1,55 @@
+﻿<Window x:Class="HackTrainApp.Views.StartUpView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HackTrainApp.Views"
+        mc:Ignorable="d"
+        Title="Welcome" 
+        Height="200" 
+        Width="380"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.RowDefinitions>
+            
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+
+
+        <Label Style="{DynamicResource LabelTheme}"
+                FontSize="25"
+               HorizontalAlignment="Stretch"
+               VerticalAlignment="Stretch"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               Grid.Row="0" 
+               Grid.ColumnSpan="2">
+            Welcome To HackTrain's System
+        </Label>
+
+        <Button Style="{DynamicResource ButtonTheme}"
+                FontSize="25"
+                Grid.Row="1"
+                Grid.Column="0"
+                Click="LoginButtonClick"
+                >
+            Log In
+        </Button>
+
+        <Button Style="{DynamicResource ButtonTheme}"
+                FontSize="25"
+                Grid.Row="1"
+                Grid.Column="1"
+                Click="RegisterButtonClick"
+                >
+            Register
+        </Button>
+    </Grid>
+</Window>
