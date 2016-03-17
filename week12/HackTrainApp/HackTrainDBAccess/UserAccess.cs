@@ -2,17 +2,11 @@
 using System.Data.Entity.Infrastructure;
 using System.Data.Entity.Validation;
 using System.Linq;
+using HackTrain.Common;
 
 namespace HackTrainDBAccess
 {
-	[Flags]
-	public enum RegisterErrors
-	{
-		None = 0,
-		UsernameTaken = 1,
-		EmailTaken = 2,
-		DataBaseError = 4,
-	}
+	
 
     public class UserAccess
     {

@@ -133,9 +133,13 @@
       <Project>{ba62a4b8-d918-43dc-a30c-16ec8ff160b2}</Project>
       <Name>HackTrain.Common</Name>
     </ProjectReference>
-    <ProjectReference Include="..\HackTrainDBAccess\HackTrainDBAccess.csproj">
-      <Project>{587a5486-1040-48b7-ac97-8ab5dd9f6907}</Project>
-      <Name>HackTrainDBAccess</Name>
+    <ProjectReference Include="..\HackTrain.ViewModels\HackTrain.ViewModels.csproj">
+      <Project>{ceaf412b-bdf9-4e43-a7e3-40df03e8cf4e}</Project>
+      <Name>HackTrain.ViewModels</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HackTrain.Views\HackTrain.Views.csproj">
+      <Project>{d28f6eda-c15d-4b06-8949-603580be3fe5}</Project>
+      <Name>HackTrain.Views</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

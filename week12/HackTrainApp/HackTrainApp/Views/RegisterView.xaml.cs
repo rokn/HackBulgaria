@@ -9,18 +9,19 @@ using System.Threading;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
+using HackTrain.ViewModels;
+using HackTrain.Views;
 using HackTrainApp.Views;
-using HackTrainDBAccess;
 
 
 namespace HackTrainApp
 {
-	public partial class RegisterView
+	public partial class RegisterView : IRegisterView
 	{
 		private readonly List<Control> _requiredInputs;
 		private readonly SolidColorBrush _defaultBackground;
 		private readonly SolidColorBrush _errorBackground;
-		private readonly UserAccess _userAccess;
+		private readonly RegisterViewModel _viewModel;
 
 		public RegisterView()
 		{
@@ -38,15 +39,14 @@ namespace HackTrainApp
 
 			_defaultBackground = (SolidColorBrush) InputUsername.Background;
 			_errorBackground = new SolidColorBrush(Color.FromRgb(190, 32, 28));
-
-			_userAccess = new UserAccess();
+			_viewModel = new RegisterViewModel(this);
 		}
 
 		private void RegisterButtonClick(object sender, RoutedEventArgs e)
 		{
 			ResetInputsColors();
 
-			var emptyInputs = GetEmptyInputs().ToList();
+				var emptyInputs = GetEmptyInputs().ToList();
 
 			if (emptyInputs.Any())
 			{
